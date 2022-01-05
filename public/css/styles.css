@@ -3,6 +3,10 @@ body {
   color: #002C5D;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -61,6 +65,12 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 767px) {
+  .navbar button {
+    margin-inline-start: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
   .navbar-brand img {
     width: 50vw;
   }
@@ -79,10 +89,24 @@ h1, h2, h3, h4 {
 
 .banner {
   position: relative;
-  height: 80vh;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  background-position-x: 30vw;
+}
+@media (max-width: 767px) {
+  .banner {
+    height: 36vh;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    height: 80vh;
+  }
 }
 .banner .color-over {
-  background-image: linear-gradient(to right, #002b5d 50%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, #002b5d 35%, rgba(0, 0, 0, 0) 60% 100%);
   position: absolute;
   left: 0;
   top: 0;
@@ -97,12 +121,19 @@ h1, h2, h3, h4 {
   transform: translateY(-50%);
 }
 .banner__content h1 {
+  animation: textfade 0.7s ease-in-out 0.3s both;
   font-size: 60px;
+}
+.banner__content h1 span {
+  animation: textfade 0.7s ease-in-out 0.5s both;
 }
 @media (max-width: 767px) {
   .banner__content h1 {
     font-size: 25px;
   }
+}
+.banner__content button {
+  animation: textfade 0.7s ease-in-out 0.7s both;
 }
 
 .about-us button {
@@ -121,20 +152,37 @@ h1, h2, h3, h4 {
 .about-iconWrap {
   margin-left: 100px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .about-iconWrap {
     margin-left: 0;
     margin-top: 50px;
   }
 }
+@media (max-width: 767px) {
+  .about-iconWrap {
+    margin-top: 50px;
+  }
+}
 .about-iconWrap .about-item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
   grid-template-rows: 167px;
   padding: 0;
   margin: 0;
   gap: 43px;
   align-self: start;
+}
+@media (max-width: 991px) {
+  .about-iconWrap .about-item {
+    gap: 15px;
+    row-gap: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .about-iconWrap .about-item {
+    gap: 10px;
+    grid-template-rows: auto;
+  }
 }
 .about-iconWrap .about-item__items {
   border: 1px solid #02C9B8;
@@ -142,6 +190,11 @@ h1, h2, h3, h4 {
   list-style: none;
   padding: 2rem;
   align-self: start;
+}
+@media (max-width: 1023px) {
+  .about-iconWrap .about-item__items {
+    padding: 1rem;
+  }
 }
 .about-iconWrap .about-item__items:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -151,6 +204,11 @@ h1, h2, h3, h4 {
   background-color: #002C5D;
   color: #ffffff;
   border-color: inherit;
+}
+@media (max-width: 767px) {
+  .about-iconWrap .about-item__items:nth-child(even) {
+    margin-top: 0;
+  }
 }
 .about-iconWrap .about-item__items .icon {
   width: 60px;
@@ -213,6 +271,11 @@ h1, h2, h3, h4 {
   color: #02C9B8;
   display: block;
 }
+@media (max-width: 767px) {
+  .counting__number {
+    font-size: 35px;
+  }
+}
 .counting__caption {
   display: inline-block;
   border-bottom: 1px solid #02C9B8;
@@ -221,6 +284,11 @@ h1, h2, h3, h4 {
 .whyus p {
   font-style: italic;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .whyus p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   .whyus img {
@@ -276,6 +344,7 @@ h1, h2, h3, h4 {
 @media (max-width: 767px) {
   .form-enquire {
     margin-top: 30px;
+    padding: 20px;
   }
 }
 .form-enquire__title {
@@ -284,6 +353,11 @@ h1, h2, h3, h4 {
   font-weight: 600;
   display: block;
   font-family: "Source Sans Pro", sans-serif;
+}
+@media (max-width: 767px) {
+  .form-enquire__title {
+    font-size: 22px;
+  }
 }
 .form-enquire__group {
   margin-bottom: 10px;
@@ -321,16 +395,47 @@ footer .footer-title {
   margin-bottom: 22px;
   display: block;
 }
+@media (max-width: 767px) {
+  footer .footer-title {
+    margin: 15px 0;
+  }
+}
 footer a {
-  display: block;
+  display: inline-block;
   color: #C7CFD9;
   text-decoration: none;
 }
 footer ul {
   padding-left: 0;
 }
+@media (max-width: 767px) {
+  footer ul {
+    margin: 0;
+  }
+}
 footer ul li {
   list-style: none;
   font-size: 16px;
   line-height: 2.2;
+}
+
+.copy {
+  padding: 15px 0;
+}
+.copy p {
+  padding: 10px;
+  padding-top: 15px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+@keyframes textfade {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
