@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
   animation: textfade 0.7s ease-in-out 0.7s both;
 }
 
-.about-us button {
+.about-us a {
   border-color: #002C5D;
   color: #002C5D;
 }
@@ -517,4 +517,8 @@ footer ul li {
   text-align: center;
   margin-bottom: 50px;
   color: #002C5D;
+}
+
+.sub-treat {
+  font-size: 22px !important;
 }
