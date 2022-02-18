@@ -1,0 +1,72 @@
+---
+layout: template.njk
+title: Doctors
+pagetitle: Doctors
+permalink: "{{ page.filePathStem | replace('/root/', '/') }}.html"
+---
+{% include "header.njk" %}
+
+<section data-scroll-section class="inner-banner" style="background-image: url('/images/about-banner.jpg');">
+    <div class="container">
+        <h1>Our Doctors</h1>
+    </div>
+</section>
+
+<section class="doctors-sec u-p-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-card">
+                    <img src="/images/DrVineetha.jpeg" alt="">
+                    <div class="d-content">
+                        <h5>Dr Vineetha
+                            </h5>
+                            <h6>Pedodontist</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-card">
+                    <img src="/images/DrAkhil Karickal.jpeg" alt="">
+                    <div class="d-content">
+                        <h5>Dr Akhil Karickal
+                            </h5>
+                            <h6>Endodontist</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-card">
+                    <img src="/images/Dr Krishna Vijayan.jpeg" alt="">
+                    <div class="d-content">
+                        <h5>Dr Krishna Vijayan 
+                            </h5>
+                            <h6>Oral and maxillofacial surgeon</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-card">
+                    <img src="/images/DrAchuJerard.jpeg" alt="">
+                    <div class="d-content">
+                        <h5>Dr Achu Jerard 
+                            </h5>
+                            <h6>Periodontist</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-card">
+                    <img src="/images/altofrank.jpeg" alt="">
+                    <div class="d-content">
+                        <h5>Dr Alto Franc V G 
+                            </h5>
+                            <h6>MDS Oral and Maxillofacial Trust</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.njk" %}

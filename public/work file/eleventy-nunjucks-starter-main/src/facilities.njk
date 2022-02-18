@@ -1,0 +1,52 @@
+---
+layout: template.njk
+title: Facilities
+pagetitle: Facilities
+permalink: "{{ page.filePathStem | replace('/root/', '/') }}.html"
+---
+{% include "header.njk" %}
+
+<section data-scroll-section class="inner-banner" style="background-image: url('/images/about-banner.jpg');">
+    <div class="container">
+        <h1>Facilities</h1>
+    </div>
+</section>
+
+
+
+<section data-scroll-section="" class="u-p-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 facili">
+                <div class="facili__img"><img src="/images/recipion.jpeg" alt="RECEPTION"></div>
+                <p class="facili__title">RECEPTION</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 facili">
+                <div class="facili__img"><img src="/images/parking.jpeg" alt="PARKING AREA"></div>
+                <p class="facili__title">PARKING AREA</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 facili">
+                <div class="facili__img"><img src="/images/5.jpeg" alt="COMFORTABLE ENVIRONMENT"></div>
+                <p class="facili__title">COMFORTABLE ENVIRONMENT
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 facili">
+                <div class="facili__img"><img src="/images/lab.jpeg" alt="QUICK LAB SERVICE"></div>
+                <p class="facili__title">QUICK LAB SERVICE
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 facili">
+                <div class="facili__img"><img src="/images/staff.jpeg" alt="PLEASANT HOSPITAL STAFF"></div>
+                <p class="facili__title">PLEASANT HOSPITAL STAFF
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 facili">
+                <div class="facili__img"><img src="/images/STERILIZATION.jpeg" alt="STERILIZATION"></div>
+                <p class="facili__title">STERILIZATION
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.njk" %}

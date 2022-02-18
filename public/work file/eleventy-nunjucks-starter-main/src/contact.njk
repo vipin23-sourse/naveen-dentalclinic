@@ -1,0 +1,59 @@
+---
+layout: template.njk
+title: Conatct Us
+pagetitle: Conatct Us
+permalink: "{{ page.filePathStem | replace('/root/', '/') }}.html"
+---
+{% include "header.njk" %}
+
+<section data-scroll-section class="inner-banner" style="background-image: url('/images/about-banner.jpg');">
+    <div class="container">
+        <h1>Conatct Us</h1>
+    </div>
+</section>
+
+
+
+<section data-scroll-section="" class="contactus u-p-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h1>Contact us</h1>
+               
+                <form class="form-enquire contact-enq" action="">
+                    <fieldset class="form-enquire__group">
+                      <label for="">First and Last name*</label>
+                        <input class="form-enquire__input" type="text" placeholder="Name" required>
+                    </fieldset>
+                    <fieldset class="form-enquire__group">
+                         <label for="">Phone*</label>
+                        <input class="form-enquire__input" type="tel" placeholder="Phone" required>
+                    </fieldset>
+                    <fieldset class="form-enquire__group">
+                      <label for="">Email*</label>
+                        <input class="form-enquire__input" type="email" placeholder="Email" required>
+                    </fieldset>
+                    <label for="">Your Message*</label>
+                    <textarea class="form-enquire__input" minlength="20" id="message" cols="40" rows="15" placeholder="Your Message*" required></textarea>
+                
+                
+                        <input type="submit" value="Send Now" class="btn btn-primary btn-secondary">
+                </form>
+                <h2>Address</h2>
+                <address>
+                    Dr. Sajini's Dental Hospital
+X/530A Ishaan's Arcade,Ground Floor</br>
+Near Chakkanaad Temple</br>
+Chullickal,Cochin-5</br>
+<a href="tel:+918089793344">Ph: 8089793344</a>
+                </address>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1743248412085!2d72.97162891477072!3d19.18758688702397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92094e0c8cf%3A0xbc183e2a522868af!2sIshan%20Arcade%2C%20Gokhale%20Rd%2C%20Shivaji%20Path%2C%20Dada%20Patil%20Wadi%2C%20Shivaji%20Nagar%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400602!5e0!3m2!1sen!2sin!4v1643704027802!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "footer.njk" %}
+
